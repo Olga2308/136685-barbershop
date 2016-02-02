@@ -5,12 +5,12 @@
     <title>Магазин Барбершоп</title>
 </head>
 <body>
-<header>
+<header class="mainHeader">
   <div class="container">
-    <div class="container_logo">
+    <div class="mainLogo">
       <img src="#" alt="logo" width="" height="">
     </div>
-    <nav class="container_navigation">
+    <nav class="mainNavigation">
       <ul>
         <li>
           <a href="#">Информация</a>
@@ -29,100 +29,111 @@
         </li>
       </ul>
     </nav>
-    <div class="container_user">
-      <a class="container_login" href="#">Вход</a>
+    <div class="userBlock">
+      <a class="userBlockLogin" href="#">Вход</a>
     </div>
   </div>
 </header>
-<main class="product">
-<h1>Средства для ухода</h1>
-<div id="breadcrumbs">
-  <ul>
-    <li><a href="#main">Главная</a></li>
-    <li><a href="#shop">Магазин</a></li>
-    <li><a href="#care" selected>Средства для ухода</a></li>
-  </ul>
-</div>
-  <div class="product_filter">
-    <h2>Производители</h2>
-    <input type="checkbox" name="baxter" id="baxter">
-    <label for="baxter">baxter of California</label>
-    <input type="checkbox" name="natty" id="natty">
-    <label for="natty">Mr Natty</label>
-    <input type="checkbox" name="suavecito" id="suavecito">
-    <label for="suavecito">Suavecito</label>
-    <input type="checkbox" name="malin" id="malin">
-    <label for="malin">Malin+Goetz</label>
-    <input type="checkbox" name="murrays" id="murrays">
-    <label for="murrays">Murray's</label>
-    <input type="checkbox" name="american" id="american">
-    <label for="american">American crew</label>
-    <h2>Группы товаров</h2>
-
+<main class="container">
+  <div class="catalogTitle">
+    <h1>Средства для ухода</h1>
+    <div id="breadcrumbs">
+      <ul>
+        <li><a href="#main">Главная</a></li>
+        <li><a href="#shop">Магазин</a></li>
+        <li><a href="#care" selected>Средства для ухода</a></li>
+      </ul>
     </div>
-  <button value="product_show">Показать</button>
-  <div class="product_results">
+  </div>
+  <div class="catalogFilter">
+    <form method="get" action="#">
+      <ul>
+        <li class="catalogFilterPart">Производители</li>
+        <li><input type="checkbox" name="baxter" id="baxter">
+            <label for="baxter">baxter of California</label></li>
+        <li><input type="checkbox" name="natty" id="natty">
+          <label for="natty">Mr Natty</label></li>
+        <li><input type="checkbox" name="suavecito" id="suavecito">
+            <label for="suavecito">Suavecito</label></li>
+        <li><input type="checkbox" name="malin" id="malin">
+            <label for="malin">Malin+Goetz</label></li>
+        <li><input type="checkbox" name="murrays" id="murrays">
+            <label for="murrays">Murray's</label></li>
+        <li><input type="checkbox" name="american" id="american">
+            <label for="american">American crew</label></li>
+
+        <li class="catalogFilterPart">Группы товаров</li>
+        <li><label><input type="radio" name="productGroup" value="shaving">Бритвенные принадлежности</label></li>
+        <li><label><input type="radio" name="productGroup" value="care">Средства для ухода</label></li>
+        <li><label><input type="radio" name="productGroup" value="accessories">Аксессуары</label></li>
+      </ul>
+      <div class="catalogFilterShow">
+        <button type="submit">Показать</button>
+      </div>
+    </form>
+  </div>
+  <div class="catalogProductResults">
     <article>
-      <div class="results_item"></div>
+      <div class="resultsItem"></div>
       <h3>Набор для путешествий <span>"Baxter of California"</span></h3>
-      <div class="item_price">2900 руб.</div>
+      <div class="resultsItemPrice">2900 руб.</div>
       <div><a href="#">Купить</a></div>
     </article>
     <article>
-      <div class="results_item"></div>
+      <div class="resultsItem"></div>
       <h3>Увлажняющий кондиционер <span>"Baxter of California"</span></h3>
-      <div class="item_price">750 руб.</div>
+      <div class="resultsItemPrice">750 руб.</div>
       <div><a href="#">Купить</a></div>
     </article>
     <article>
-      <div class="results_item"></div>
+      <div class="resultsItem"></div>
       <h3>Гель для волос <span>"Suavecito"</span></h3>
-      <div class="item_price">290 руб.</div>
+      <div class="resultsItemPrice">290 руб.</div>
       <div><a href="#">Купить</a></div>
     </article>
     <article>
-      <div class="results_item"></div>
+      <div class="resultsItem"></div>
       <h3>Глина для укладки волос <span>"American crew"</span></h3>
-      <div class="item_price">500 руб.</div>
+      <div class="resultsItemPrice">500 руб.</div>
       <div><a href="#">Купить</a></div>
     </article>
     <article>
-      <div class="results_item"></div>
+      <div class="resultsItem"></div>
       <h3>Гель для волос <span>"American crew"</span></h3>
-      <div class="item_price">500 руб.</div>
+      <div class="resultsItemPrice">500 руб.</div>
       <div><a href="#">Купить</a></div>
     </article>
     <article>
-      <div class="results_item"></div>
+      <div class="resultsItem"></div>
       <h3>Набор для бритья <span>"Baxter of California"</span></h3>
-      <div class="item_price">3900 руб.</div>
+      <div class="resultsItemPrice">3900 руб.</div>
       <div><a href="#">Купить</a></div>
     </article>
   </div>
-  <div class="product_paginator">
+  <div class="catalogProductPaginator">
     <a href="#1">1</a>
     <a href="#2" class="current">2</a>
     <a href="#3">3</a>
     <a href="#4">4</a>
   </div>
-  </main>
+</main>
 <footer>
-  <div class="footer_container">
-    <section class="footer_contacts">
+  <div class="footerContainer">
+    <section class="footerContacts">
       Барбершоп «Бородинский»<br>
       Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
       <a href="#">Как нас найти?</a><br>
       Телефон: +7 (812) 666-02-66
     </section>
-    <section class="footer_social">
+    <section class="footerSocial">
       <p>Давайте дружить!</p>
-      <a class="social_btn social_btn_vk" href="#">Вконтакте</a>
-      <a class="social_btn social_btn_fb" href="#">Фейсбук</a>
-      <a class="social_btn social_btn_inst" href="#">Инстаграм</a>
+      <a class="socialBtn socialBtnVk" href="#">Вконтакте</a>
+      <a class="socialBtn socialBtnFb" href="#">Фейсбук</a>
+      <a class="socialBtn socialBtnInst" href="#">Инстаграм</a>
     </section>
-    <section class="footer_copyright">
+    <section class="footerCopyright">
       <p>Разработано:</p>
-      <a class="footer_btn" href="https://htmlacademy.ru">HTML Academy</a>
+      <a class="footerBtn" href="https://htmlacademy.ru">HTML Academy</a>
     </section>
   </div>
 </footer>
